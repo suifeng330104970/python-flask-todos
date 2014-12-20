@@ -16,7 +16,7 @@
         {% for todo in todos %}
             <div class='todo'>
                 {% if todo.completed %}
-                    <strike><a class='completed' href="/todos/{{todo.id}}/uncomplete">{{ todo.text }}</a></strike>
+                    <a class='completed' href="/todos/{{todo.id}}/uncomplete">{{ todo.text }}</a>
                 {% else %}
                     <a class='uncompleted' href="/todos/{{todo.id}}/complete">{{ todo.text }}</a>
                 {% endif %}

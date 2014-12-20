@@ -9,6 +9,11 @@ html, body {
     width: 400px;
 }
 
+.completed {
+    color: #888;
+    text-decoration: line-through;
+}
+
 a {
     color: #000; 
     text-decoration: none;
