@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div id='header' style='margin: 1em;'>
+        <h1>Todos</h1>
+        <div class='instructions'>
+            Instructions:
+            <ul>
+                <li>Click on an item to complete it. Click it again to un-complete it.</li>
+            </ul>
+        </div>
+    </div>
+    <div id='todos_list' style='margin: 1em;'>
+        {% for todo in todos %}
+            <div class='todo'>
+                {% if todo.completed %}
+                    <strike><a class='completed' href="/todos/{{todo.id}}/uncomplete">{{ todo.text }}</a></strike>
+                {% else %}
+                    <a class='uncompleted' href="/todos/{{todo.id}}/complete">{{ todo.text }}</a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <div style='margin: 1em;'>
+        <form method='POST' action='/todos'>
+            New item:
+            <input name='text'></input>
+            <input type='submit' value="Add"></input>
+            <a href="/remove_completed">Remove Completed</a>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,24 @@
+html, body {
+    font-family: Helvetica, sans-serif;
+}
+
+.todo {
+    padding: 0.33em;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #BBB;
+    width: 400px;
+}
+
+a {
+    color: #000; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f00; 
+    text-decoration: none;
+}
+
+.instructions {
+    font-size: 0.75em;
+}

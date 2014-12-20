@@ -1,0 +1,4 @@
+nose
+coverage
+pysqlite
+flask-sqlalchemy
