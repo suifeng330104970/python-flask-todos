@@ -31,6 +31,13 @@ Install the dependencies:
 
     pip install -r requirements.txt
 
+
+Running tests
+-------------
+
+    nosetests --with-cover --cover-package=todos
+
+
 Launch the app
 ----------------
 
