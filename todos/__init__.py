@@ -5,6 +5,8 @@ Tom Slankard <tom.slankard@here.com>
 Simple Flask app for managing a todo list.
 """
 
+# pylint: disable=no-member
+
 import os
 from flask import Flask, render_template, request, redirect, url_for
 from flask.ext.sqlalchemy import SQLAlchemy
